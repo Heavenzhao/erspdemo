@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>北京源硅创新科技有限公司</title>
+    <title>管理员首页</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-table.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
@@ -13,113 +14,17 @@
     <![endif]-->
 
     <style>
-
         body {
-            padding-top: 50px;
+            padding-top: 70px;
             padding-bottom: 40px;
             color: #5a5a5a;
         }
-
-        /* 轮播广告 */
-
-        .carousel {
-            height: 380px;
-            margin-bottom: 40px;
-        }
-
-        .carousel .item {
-            height: 380px;
-            background-color: #000;
-        }
-
-        .carousel .item img {
-            width: 100%;
-        }
-
-        .carousel-caption {
-            z-index: 10;
-        }
-
-        .carousel-caption p {
-            margin-bottom: 20px;
-            font-size: 20px;
-            line-height: 1.8;
-        }
-
-        /* 简介 */
 
         .summary {
             padding-right: 15px;
             padding-left: 15px;
         }
-
-        .summary .col-md-4 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        /* 特性 */
-
-        .feature-divider {
-            margin: 50px 0;
-        }
-
-        .feature {
-            padding: 30px 0;
-        }
-
-        .feature-heading {
-            font-size: 50px;
-            color: #2a6496;
-        }
-
-        .feature-heading .text-muted {
-            font-size: 28px;
-        }
-
-        /* 响应式布局 */
-
-        @media (max-width: 768px) {
-
-            .summary {
-                padding-right: 3px;
-                padding-left: 3px;
-            }
-
-            .carousel {
-                height: 300px;
-                margin-bottom: 30px;
-            }
-
-            .carousel .item {
-                height: 300px;
-            }
-
-            .carousel img {
-                min-height: 300px;
-            }
-
-            .carousel-caption p {
-                font-size: 16px;
-                line-height: 1.4;
-            }
-
-            .feature-heading {
-                font-size: 34px;
-            }
-
-            .feature-heading .text-muted {
-                font-size: 22px;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .feature-heading {
-                margin-top: 50px;
-            }
-        }
     </style>
-
 </head>
 
 <body>
@@ -137,170 +42,54 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#summary-container">解决方案</a></li>
-                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品中心 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#feature-tab" data-tab="tab-istep">iSTEP</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-drunion">Dr.Union</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-cms">CMS</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-ecode">Ecode</a></li>
-                        <li><a href="#feature-tab" data-tab="tab-agilepms">AgilePMS</a></li>
-                    </ul>
-                </li>
-                <li><a href="#ad-carousel">服务与支持</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            	<li class="active"><a href="#summary-container">管理产品</a></li>
+                <li><a href="#summary-container">管理用户</a></li>
+                <li><a href="#summary-container">管理需求</a></li>
+                <li><a href="#summary-container">管理基础数据</a></li>
             </ul>
         </div>
     </div>
 </div>
 
-<!-- 广告轮播 -->
-<div id="ad-carousel" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="1000">
-    <ol class="carousel-indicators">
-        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#ad-carousel" data-slide-to="1"></li>
-        <li data-target="#ad-carousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="../images/a-1.png" alt="">
-        </div>
-        <div class="item">
-            <img src="../images/a-2.png" alt="">
-        </div>
-        <div class="item">
-            <img src="../images/a-3.png" alt="">
-        </div>
-    </div>
-    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
-            class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
-            class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-
-
 <!-- 主要内容 -->
 <div class="container summary">
-
     <div class="row" id="summary-container">
-        <div class="col-md-4">
-            <img class="img-circle" src="../images/shou-1.gif" alt="">
-            <h2>软件测试评估解决方案</h2>
-            <p>面向军用软件测评机构，提供集成化软件测试评估及过程管理平台，辅助软件测评机构提高测试质量和效率、积累测试资产、提升评估能力。</p>
-            <p><a class="btn btn-default" href="#" role="button">了解详情</a></p>
-        </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="../images/shou-2.gif" alt="">
-            <h2>研发质量保证解决方案</h2>
-            <p>面向军用软件研制机构，提供研发质量保障平台，支持GJB5000A，辅助开发组织规范产品研发过程、提高产品质量、提升核心竞争力。</p>
-            <p><a class="btn btn-default" href="#" role="button">了解详情</a></p>
-        </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="../images/shou-3.gif" alt="">
-            <h2>试验数据管理解决方案</h2>
-            <p>面向复杂产品设计单位，提供试验设计和数据管理平台，简化试验数据采集过程和数据存储，通过对产品设计过程和试验数据管理与分析，提高产品可靠性。</p>
-            <p><a class="btn btn-default" href="#" role="button">了解详情</a></p>
-        </div>
+   		<div class="panel panel-primary">
+		  <div class="panel-heading">管理产品</div>
+		  <div class="panel-body">
+			  <form class="navbar-form navbar-left">
+				  <div class="form-group">
+				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
+				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
+				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
+				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
+				   
+				    <button type="button" class="btn btn-info">查询</button>
+				  	<button type="button" class="btn btn-success">添加</button>
+				    <button type="button" class="btn btn-danger">删除</button>
+				  </div>
+			 </form>
+		  </div>
+		</div>
+		
+		<div class="panel panel-primary">
+		  <div class="panel-heading">产品列表</div>
+		  <div class="panel-body">
+			 <div><table id="table"></table></div>
+		  </div>
+		</div>
     </div>
-
-    <hr class="feature-divider">
-
-    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-istep" role="tab" data-toggle="tab">iSTEP</a></li>
-        <li><a href="#tab-drunion" role="tab" data-toggle="tab">Dr.Union</a></li>
-        <li><a href="#tab-cms" role="tab" data-toggle="tab">CMS</a></li>
-        <li><a href="#tab-ecode" role="tab" data-toggle="tab">Ecode</a></li>
-        <li><a href="#tab-agilepms" role="tab" data-toggle="tab">AgilePMS</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div class="tab-pane active" id="tab-istep">
-            <div class="row feature">
-                <div class="col-md-7">
-                    <h2 class="feature-heading">iSTEP</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。iSTEP 提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-drunion">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="feature-heading">Dr.Union</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。Dr.Union 提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                   
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-cms">
-            <div class="row feature">
-                <div class="col-md-7">
-                    <h2 class="feature-heading">CMS</h2>
-                    <p> CMS 直接支持开发库、受控库、产品库管理，用户只需关注配置管理业务操作，如配置项的划分、基线的管理等，无需考虑底层操作，降低了配置管理工具使用的复杂度，能够有效地提高配置管理的实施难度。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-ecode">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="feature-heading">Ecode</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。Ecode 提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-agilepms">
-            <div class="row feature">
-                <div class="col-md-7">
-                    <h2 class="feature-heading">AgilePMS</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。Dr.CMS提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>
         <p>Copyright © 2017 Beijing Ordinov Technology Co.,Ltd. All rights reserved. 北京源硅创新科技有限公司   </p>
     </footer>
 </div>
 
-<!-- 关于 -->
-<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
-      aria-hidden="true">
-     <div class="modal-dialog">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <button type="button" class="close" data-dismiss="modal"><span
-                         aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
-                 <h4 class="modal-title" id="modal-label">关于</h4>
-             </div>
-             <div class="modal-body">
-                 <p>北京源硅创新科技有限公司是一家高新技术企业，为用户提供软件过程和软件质量保障管理平台的供应商及软件解决方案服务商。</p>
-             </div>
-             <div class="modal-footer">
-                 <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
-             </div>
-         </div>
-     </div>
- </div>
-
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-table.js"></script>
+<script src="../js/bootstrap-table-zh-CN.js"></script>
 <script>
 $(function () {
     $('#ad-carousel').carousel();
@@ -315,6 +104,114 @@ $(function () {
             }
         }
     });
+});
+
+$('#table').bootstrapTable({
+    columns: [{
+		checkbox : true
+		},{
+        field: 'id',
+        width: 60,
+        align: 'center',
+        title: '产品编号',
+        visible : false
+    }, {
+        field: 'name',
+        width: 200,
+        align: 'center',
+        title: '产品名称'
+    }, {
+        field: 'price',
+        width: 120,
+        align: 'center',
+        title: '产品价格'
+    },{
+        title: '操作',
+        align: 'center',
+        width: 10,
+        formatter:function(value,row,index){
+            var a = '<a href="#" class="glyphicon glyphicon-edit"></a>';
+            return a;
+        } 
+    }],
+    data: [{
+        id: 1,
+        name: '黄果树-福贵-S1',
+        price: '￥10.00'
+    }, {
+        id: 2,
+        name: '黄果树-福贵-S2',
+        price: '￥20.00'
+    },{
+        id: 3,
+        name: '黄果树-福贵 -S3',
+        price: '￥30.00'
+    },{
+        id: 4,
+        name: '黄果树-福贵 -S4',
+        price: '￥40.00'
+    },{
+        id: 5,
+        name: '黄果树-福贵-S5',
+        price: '￥50.00'
+    },{
+        id: 6,
+        name: '黄果树-福贵-S6',
+        price: '￥60.00'
+    },{
+        id: 7,
+        name: '黄果树-福贵-S7',
+        price: '￥70.00'
+    },{
+        id: 8,
+        name: '黄果树-福贵-S8',
+        price: '￥80.00'
+    },{
+        id: 9,
+        name: '黄果树-福贵-S9',
+        price: '￥90.00'
+    },{
+        id: 10,
+        name: '黄果树-福贵-S10',
+        price: '￥100.00'
+    },{
+        id: 11,
+        name: '黄果树-福贵-S11',
+        price: '￥110.00'
+    },{
+        id: 12,
+        name: '黄果树-福贵-S12',
+        price: '￥120.00'
+    },{
+        id: 13,
+        name: '黄果树-福贵-S13',
+        price: '￥130.00'
+    },{
+        id: 14,
+        name: '黄果树-福贵-S14',
+        price: '￥140.00'
+    }],
+	sortable: true, 
+	sortName:"id",
+	sortOrder:"asc",
+	clickToSelect: true,
+	sidePagination : "client",
+	uniqueId : "id",
+	height:472,
+	search : false,
+	striped : true,
+	pagination : true,
+	pageNumber:1,
+	pageSize : 10,
+	pageList : [10,20,50,100],
+	queryParams : function getParams(params) {
+		return {
+			page : this.pageNumber,
+			rows : params.limit,
+			sord:this.sortOrder,
+			sidx:this.sortName
+		};
+	}
 });
 </script>
 </body>
