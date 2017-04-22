@@ -18,7 +18,8 @@
         }
         .top-right{
         	padding-right: 15px;
-            padding-left: 160px;
+            padding-left: 500px;
+            padding-right:-110px;
         }
         /* 轮播 */
         .carousel {
@@ -55,11 +56,11 @@
             padding: 30px 0;
         }
         .feature-heading {
-            font-size: 50px;
+            font-size: 12px;
             color: #2a6496;
         }
         .feature-heading .text-muted {
-            font-size: 28px;
+            font-size: 12px;
         }
         /* 响应式布局 */
         @media (max-width: 768px) {
@@ -82,16 +83,26 @@
                 line-height: 1.4;
             }
             .feature-heading {
-                font-size: 34px;
+                font-size: 12px;
             }
             .feature-heading .text-muted {
-                font-size: 22px;
+                font-size: 12px;
             }
         }
         @media (min-width: 992px) {
             .feature-heading {
                 margin-top: 50px;
             }
+        }
+        .voice{
+        	margin-top:-20px;
+        }
+        .fenlei{
+        	color:#ff9900;
+        }
+        .box{
+             padding: 10px 0;
+             font-size:12px;
         }
     </style>
 </head>
@@ -111,7 +122,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
             	<li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品中心 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#feature-tab" data-tab="tab-istep">iSTEP</a></li>
                         <li><a href="#feature-tab" data-tab="tab-drunion">Dr.Union</a></li>
@@ -120,14 +131,12 @@
                         <li><a href="#feature-tab" data-tab="tab-agilepms">AgilePMS</a></li>
                     </ul>
                 </li>
-                <li><a href="#">发布需求</a></li>
-                <li><a href="#">发布产品</a></li>
-                <li><a href="#">检索需求和产品</a></li>
-                <li><a href="#">用户注册</a></li>
+                <li><a href="#">需求</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
             </ul>
+			
             <ul class="nav navbar-nav top-right">
-            	<li><a href="#"><img alt="" src="../images/logo-2.png" style="height:22px;width:22px;">&nbsp;欢迎你：xxxxx &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>登录</span>&nbsp;&nbsp;<span>退出</span></a></li>
+            	<li><a href="#"><img class="img-circle" alt="" src="../images/E-2.jpg" style="width:20px;height:20px;"/>&nbsp;欢迎你：xxxxx &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:yellow">登录</span>|<span style="color:yellow">注册</span></a></li>
     		</ul>
         </div>
     </div>
@@ -157,93 +166,496 @@
 </div>
 <!-- 主要内容 -->
 <div class="container summary">
+	<div class="voice">
+       	<a class="glyphicon glyphicon-bell"></a> <span class="voiceDes">最新动态:林阿娇 在 刚刚 发布了《移动支付平台  V1.0》 产品</span>
+    </div>
+	<hr class="divider">
+	<h4>最新产品推荐  <small>首推不只是一种认可，还是一种态度!</small></h4>
 	<!-- 简介 -->
     <div class="row" id="summary-container">
         <div class="col-md-4">
-            <img class="img-circle" src="../images/shou-1.gif" alt="">
+            <img class="img-thumbnail" src="../images/C-1.jpg" alt="">
             <h2>软件测试评估解决方案</h2>
             <p>面向军用软件测评机构，提供集成化软件测试评估及过程管理平台，辅助软件测评机构提高测试质量和效率、积累测试资产、提升评估能力。</p>
-            <p><a class="btn btn-default" href="#" role="button">了解详情</a></p>
+            <p><a class="btn btn-warning" href="#" role="button">了解详情</a></p>
         </div>
         <div class="col-md-4">
-            <img class="img-circle" src="../images/shou-2.gif" alt="">
+            <img class="img-thumbnail" src="../images/C-2.jpg" alt="">
             <h2>研发质量保证解决方案</h2>
             <p>面向军用软件研制机构，提供研发质量保障平台，支持GJB5000A，辅助开发组织规范产品研发过程、提高产品质量、提升核心竞争力。</p>
-            <p><a class="btn btn-default" href="#" role="button">了解详情</a></p>
+            <p><a class="btn btn-warning" href="#" role="button">了解详情</a></p>
         </div>
         <div class="col-md-4">
-            <img class="img-circle" src="../images/shou-3.gif" alt="">
+            <img class="img-thumbnail" src="../images/C-3.jpg" alt="">
             <h2>试验数据管理解决方案</h2>
             <p>面向复杂产品设计单位，提供试验设计和数据管理平台，简化试验数据采集过程和数据存储，通过对产品设计过程和试验数据管理与分析，提高产品可靠性。</p>
-            <p><a class="btn btn-default" href="#" role="button">了解详情</a></p>
+            <p><a class="btn btn-warning" href="#" role="button">了解详情</a></p>
         </div>
     </div>
-    <hr class="feature-divider">
+    <hr class="divider">
+    <div class="row">
+    	 <img src="../images/A-1.jpg" alt="">
+    </div>
+    <hr class="divider">
     <!-- 产品介绍 -->
     <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-istep" role="tab" data-toggle="tab">iSTEP</a></li>
-        <li><a href="#tab-drunion" role="tab" data-toggle="tab">Dr.Union</a></li>
-        <li><a href="#tab-cms" role="tab" data-toggle="tab">CMS</a></li>
-        <li><a href="#tab-ecode" role="tab" data-toggle="tab">Ecode</a></li>
-        <li><a href="#tab-agilepms" role="tab" data-toggle="tab">AgilePMS</a></li>
+        <li class="active"><a href="#tab-istep" role="tab" data-toggle="tab">产品库  <small>PRODUCT LIBRARY</small></a></li>
+        <li><a href="#tab-drunion" role="tab" data-toggle="tab">需求库  <small>TRADE LEADS</small></a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="tab-istep">
+        	<div align="right" style=" margin: 5px 0;"><button type="button" class="btn btn-warning btn-sm">发布产品</button></div>
             <div class="row feature">
-                <div class="col-md-7">
-                    <h2 class="feature-heading">iSTEP</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。iSTEP 提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-1.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
                 </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-2.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-3.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-4.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
                 </div>
             </div>
+            <div class="row feature">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-1.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-2.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-3.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-4.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+            </div>
+            <div class="row feature">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-1.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-2.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-3.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-4.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+            </div>
+            <div class="row feature">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-1.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-2.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-3.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-4.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+            </div>
+            <div class="row feature">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-1.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-2.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-3.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+                <div class="col-md-3">
+                	<img class="img-responsive" src="../images/D-4.jpg" alt="">
+                	<div><h5><a href="#">在线支付平台 1.0</a></h5></div>
+                	<div><h6><span style="color:#ff00ff">自研产品</span> - <span>金融 </span> - <span>软件 </span></h6></div>
+                	<div><h6><span>赵武艺</span> - <span>3天前发布</span></h6></div>
+                	<div><h6>北京圆规创新科技有限公司</h6></div>
+                </div>
+            </div>
+            
+            <nav aria-label="...">
+			  <ul class="pager">
+			    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+			    <li class="next"><a href="#">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+			  </ul>
+			</nav>
         </div>
+        
         <div class="tab-pane" id="tab-drunion">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="feature-heading">Dr.Union</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。Dr.Union 提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                   
-                </div>
+        	<div align="right" style=" margin: 5px 0;"><button type="button" class="btn btn-warning btn-sm">发布需求</button></div>
+        	
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
             </div>
-        </div>
-        <div class="tab-pane" id="tab-cms">
-            <div class="row feature">
-                <div class="col-md-7">
-                    <h2 class="feature-heading">CMS</h2>
-                    <p> CMS 直接支持开发库、受控库、产品库管理，用户只需关注配置管理业务操作，如配置项的划分、基线的管理等，无需考虑底层操作，降低了配置管理工具使用的复杂度，能够有效地提高配置管理的实施难度。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		    <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
             </div>
-        </div>
-        <div class="tab-pane" id="tab-ecode">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="feature-heading">Ecode</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。Ecode 提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		  <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		  <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
             </div>
-        </div>
-        <div class="tab-pane" id="tab-agilepms">
-            <div class="row feature">
-                <div class="col-md-7">
-                    <h2 class="feature-heading">AgilePMS</h2>
-                    <p> 配置管理涉及到企业软件资产，需要强大而灵活的机制进行访问控制。Dr.CMS提供细致到单项数据的访问控制，可以为某个项目、或者某个项目下的一个配置项，单独进行访问权限设置，并且可以授权给用户组，也可以授权给某个个人。这样既保证了访问控制的强大、灵活，又方便管理员的工作。上述产品构建在统一的协作平台之上，为软件开发组织中各个层面的人员提供集成化的协同工作环境，减少了软件工程过程组、项目组、以及其他相关团队协调的工作量，大大提高过程改进的工作效率。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="../images/union-03.png" alt="">
-                </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
             </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		  <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		  <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="box">
+            		   <span class="fenlei">【求购】</span>
+						<a href="#" class="title" target="_blank">
+						电力传感器数据分析解决方案
+						&ensp;								&ensp;								</a>
+						<span class="date">2017-04-22</span> &ensp;
+						<span>赵武艺</span>&ensp;
+						<span>北京源硅创新科技有限公司</span>
+            		</div>
+            	</div>
+            </div>
+            
+            <nav aria-label="...">
+			  <ul class="pager">
+			    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+			    <li class="next"><a href="#">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+			  </ul>
+			</nav>
         </div>
+    </div>
+    <hr class="divider">
+    <h4>品牌推荐 <small>RECOMMENDED BRANDS</small></h4>
+    <div class="row">
+        <div class="col-md-2">
+            <img class="img-thumbnail" src="../images/B-1.jpg" alt="">
+            <div align="center"><h6>河南承信齿轮传动有限公司</h6></div>
+        </div>
+        <div class="col-md-2">
+            <img class="img-thumbnail" src="../images/B-2.jpg" alt="">
+            <div align="center"><h6>机械科学研究总院</h6></div>
+        </div>
+        <div class="col-md-2">
+            <img class="img-thumbnail" src="../images/B-3.jpg" alt="">
+            <div align="center"><h6>福田雷沃国际重工</h6></div>
+        </div>
+        <div class="col-md-2">
+            <img class="img-thumbnail" src="../images/B-4.jpg" alt="">
+            <div align="center"><h6>中信重工机械股份有限公司</h6></div>
+        </div>
+        <div class="col-md-2">
+            <img class="img-thumbnail" src="../images/B-5.png" alt="">
+            <div align="center"><h6>奥盟食品机械自营店</h6></div>
+        </div>
+        <div class="col-md-2">
+            <img class="img-thumbnail" src="../images/B-6.jpg" alt="">
+            <div align="center"><h6 style="margin-left:15px;">三联会展</h6></div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="row">
+    	 <img src="../images/A-1.jpg" alt="">
     </div>
     <hr class="feature-divider">
     <!-- 页脚 -->
