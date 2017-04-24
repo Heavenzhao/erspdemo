@@ -1,0 +1,138 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.navbar-brand img {
+	height:30px;
+}
+
+#collapse {
+	width:80%;
+}
+
+.top-right {
+	padding-right: 15px;
+    padding-left: 15px;
+    float:right;
+    margin-top:-36px;
+    color:#fff;
+}
+.top-right img {
+	width:22px;
+	height:22px;
+}
+.top-right a {
+	color:#f0ad4e
+}
+
+/* 轮播 */
+.carousel {
+    height: 380px;
+    margin-bottom: 40px;
+}
+.carousel .item {
+    height: 380px;
+    background-color: #000;
+}
+.carousel .item img {
+    width: 100%;
+}
+.carousel-caption {
+    z-index: 10;
+}
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.summary {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.summary .col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-divider {
+    margin: 50px 0;
+}
+.feature {
+    padding: 20px 0;
+}
+.feature-heading {
+    font-size: 12px;
+    color: #2a6496;
+}
+.feature-heading .text-muted {
+    font-size: 12px;
+}
+
+.contentdiv {
+	margin: 10px 60px 0;
+	font-size:12px;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .summary {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    .carousel {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .carousel img {
+        min-height: 300px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .feature-heading {
+        font-size: 12px;
+    }
+    .feature-heading .text-muted {
+        font-size: 12px;
+    }
+    .box{
+      padding: 10px 0;
+      font-size:12px;
+	}
+	.voice{
+	  margin-top:-20px;
+	}
+}
+
+@media (min-width: 992px) {
+    .feature-heading {
+        margin-top: 50px;
+    }
+    .box{
+      padding: 10px 0;
+      font-size:12px;
+	}
+	.voice{
+	  margin-top:-20px;
+	}
+}
+
+.voice{
+	margin-top:-20px;
+}
+
+.fenlei{
+	color:#ff9900;
+}
+
+.box {
+     padding: 10px 0;
+     font-size:12px;
+}

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>管理员首页</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
     <link href="../css/bootstrap-table.css" rel="stylesheet">
+    
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
@@ -14,19 +16,6 @@
     <style>
         body {
             padding-top: 70px;
-            padding-bottom: 40px;
-            color: #5a5a5a;
-        }
-        .summary {
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-        .feature-divider {
-            margin: 50px 0;
-        }
-        .top-right{
-        	padding-right: 15px;
-            padding-left: 340px;
         }
     </style>
 </head>
@@ -50,9 +39,9 @@
                 <li><a href="#summary-container">管理需求</a></li>
                 <li><a href="#summary-container">管理基础数据</a></li>
             </ul>
-            <ul class="nav navbar-nav top-right">
-            	<li><a href="#"><img alt="" src="../images/logo-2.png" style="height:22px;width:22px;">&nbsp;欢迎你：xxxxx &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick="login();">登录</span>&nbsp;&nbsp;<span onclick="login();">退出</span></a></li>
-    		</ul>
+        </div>
+        <div class="top-right">
+        	<img class="img-circle" alt="" src="../images/E-1.jpg"/>&ensp;欢迎你:赵武艺&ensp;<a href="#" onclick="login();">登录&nbsp;</a>|&nbsp;<a href="#" onclick="login();">注册</a>
         </div>
     </div>
 </div>
@@ -64,16 +53,17 @@
 		  <div class="panel-body">
 			  <form class="navbar-form navbar-left">
 				  <div class="form-group">
-				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
-				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
-				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
-				    <span>条件:</span><input type="text" class="form-control" placeholder="条件">
-				   
-				    <button type="button" class="btn btn-info">查询</button>
-				  	<button type="button" class="btn btn-success">添加</button>
-				    <button type="button" class="btn btn-danger">删除</button>
+				    <span>条件:&ensp;</span><input type="text" class="form-control" placeholder="条件">
+				    <span>条件:&ensp;</span><input type="text" class="form-control" placeholder="条件">
+				    <span>条件:&ensp;</span><input type="text" class="form-control" placeholder="条件">
+				    <span>条件:&ensp;</span><input type="text" class="form-control" placeholder="条件">&ensp;
 				  </div>
 			 </form>
+			  <div style="float:right;margin-top:8px;">
+			  	<button type="button" class="btn btn-info">查询</button>&ensp;
+			  	<button type="button" class="btn btn-success">添加</button>&ensp;
+			  	<button type="button" class="btn btn-danger">删除</button>
+			  </div>
 		  </div>
 		</div>
 		<div class="panel panel-primary">
