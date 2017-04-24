@@ -17,6 +17,10 @@
         body {
             padding-top: 70px;
         }
+        .rightBtn {
+        	float:right;
+        	margin-top:8px;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img alt="" src="../images/logo.png" style="height:30px;"></a>
+            <a class="navbar-brand" href="#"><img alt="" src="../images/logo.png"></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -59,10 +63,11 @@
 				    <span>条件:&ensp;</span><input type="text" class="form-control" placeholder="条件">&ensp;
 				  </div>
 			 </form>
-			  <div style="float:right;margin-top:8px;">
+			  <div class="rightBtn">
 			  	<button type="button" class="btn btn-info">查询</button>&ensp;
 			  	<button type="button" class="btn btn-success">添加</button>&ensp;
-			  	<button type="button" class="btn btn-danger">删除</button>
+			  	<button type="button" class="btn btn-danger" id="del_btn" title="" data-container="body" 
+			data-toggle="popover" data-html="true" data-placement="auto left">删除</button>
 			  </div>
 		  </div>
 		</div>
@@ -79,6 +84,7 @@
         <p>Copyright © 2017 Beijing Ordinov Technology Co.,Ltd. All rights reserved. 北京源硅创新科技有限公司   </p>
     </footer>
 </div>
+<object type="text/x-scriptlet"></object>
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/bootstrap-table.js"></script>
@@ -97,6 +103,7 @@ $(function () {
             }
         }
     });
+    $("#del_btn").click(deleteInfo);
 });
 
 $('#table').bootstrapTable({
@@ -209,6 +216,17 @@ $('#table').bootstrapTable({
 
 function login() {
 	window.location.href = "./login.html";
+}
+
+function deleteInfo(){
+	var optionsInfo = {
+		content:"<h5><font color='red'>请至少选择一条数据!</font></h5>"
+	};
+	$("#del_btn").popover(optionsInfo).popover('show');
+}
+
+function addInfo(){
+	
 }
 </script>
 </body>
