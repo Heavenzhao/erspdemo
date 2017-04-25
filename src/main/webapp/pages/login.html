@@ -6,57 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>企业资源共享平台--登录</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
-  <style type="text/css">
-    body {
-       padding-top: 120px;
-       padding-bottom: 40px;
-    }
-    .login {
-    	width:400px;
-    	height:480px;
-    	margin-left:300px;
-    	border:1px solid #ebe7e2;
-    	background-color:#f5f5f5;
-    }
-  </style>
   </head>
   <body>
-  	<!-- 主要内容 -->
-	<div class="container summary">
-      <form class="form">
-      	 <div class="login">
-	         <div class="form-group" align="center">
-		  	&nbsp;
-	    	</div>
-	  		<div class="form-group" align="center">
-	        	<img src="../images/logo-2.png" alt="">
-	      	</div>
-			<div class="form-group" align="center">
-		    	<input type="text" class="form-control" style="width:300px" placeholder="用户名">
+  <div class="login yahei">
+	<div class="container">
+		<!-- 左边背景图片 -->
+		<div class="login-bg">
+			<a href="#">
+				<img src="../images/a-1.png" height="400" width="630" alt="企业资源共享平台">
+			</a>
+		</div>
+
+		<div class="login-inner">
+			<div class="login-top">
+				<ul>
+	        		<li class="first current" style="margin-top:-10px;">会员登录 </li>
+	        		<li style="float:right;margin-top:-50px;">管理员登录 </li>
+	    	    </ul>
 			</div>
-			
-			<div class="form-group" align="center">
-		   		<input type="password" class="form-control" style="width:300px" placeholder="密码">
+			<div id="form_tab" class="login-form">
+				<form id="form-login" name="Formlogin" method="post">
+					<input name="utype" value="" type="hidden" id="utype">
+					<div class="login_textreg">
+						<div id="error_login" class="show_error"></div>
+						<p>
+							<input type="text" class="login-text ui-text2" name="username" id="username" placeholder="请输入用户名">
+						</p>
+						<p>
+							<input type="password" class="login-text ui-text2 pwd" name="password" id="password" placeholder="请输入密码">
+						</p>
+					</div>
+					<div class="login_buttonreg">
+						<input name="submitlogin" class="login-sub" value="登录" type="button" id="login">
+					</div>
+					<p class="ten1">
+						还没有账号？
+						<a href="#" class="forget">我要注册</a>
+					</p>
+				</form>
 			</div>
-			<div class="form-group" align="center">
-		  		<button type="button" class="btn btn-success" onclick="login();">登录</button>&nbsp;&nbsp;
-	    	</div>
-	    	<div class="form-group" align="center">
-		  		&nbsp;
-	    	</div>
-    	</div>
-   </form>	
+		</div>
+	</div>
 </div>
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script type="text/javascript">
-function login() {
-	window.location.href = "./index.html";
-}
-</script>
+<script src="../js/login.js"></script>
 </body>
 </html>
