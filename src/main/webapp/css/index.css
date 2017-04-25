@@ -24,7 +24,7 @@ body {
 	height:22px;
 }
 .top-right a {
-	color:#f0ad4e
+	color:#FFA930
 }
 
 /* ÂÖ²¥ */
@@ -136,3 +136,46 @@ body {
      padding: 10px 0;
      font-size:12px;
 }
+
+.search-form .box {
+	    position: relative;
+	    margin-top: 10px;
+	    padding: 2px 0 0 2px;
+	    width: 600px;
+	    height: 40px;
+	    background: #FFA930;
+	}
+	.search-form .search-txt {
+	    padding-left: 40px;
+	    width: 460px;
+	    height: 38px;
+	    font-size: 14px;
+	    color: #b2b2b2;
+	    background: #fff;
+	    line-height: 38px;
+	    border: none;
+	    border-bottom:2px solid #FFA930;
+	}
+ .l {
+	float: left;
+  }
+ .search-form .search-sub {
+    width: 98px;
+    height: 38px;
+    color: #fff;
+    background: url(../images/search_sub_bg.png?__sprite) no-repeat #ffa930;
+    cursor: pointer;
+    border: 0;
+ }
+ .search-form .box .search-icon {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/search_icon.png?__sprite) no-repeat;
+ }
+ .indexBtn {
+ 	background-color:#FFA930;
+ }
